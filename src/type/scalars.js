@@ -48,9 +48,9 @@ function coerceInt(value: mixed): number {
     );
   }
   if (value > MAX_INT || value < MIN_INT) {
-    throw new TypeError(
-      `Int cannot represent non 32-bit signed integer value: ${inspect(value)}`,
-    );
+    // throw new TypeError(
+    //   `Int cannot represent non 32-bit signed integer value: ${inspect(value)}`,
+    // );
   }
   return value;
 }
